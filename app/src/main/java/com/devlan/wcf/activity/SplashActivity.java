@@ -1,4 +1,4 @@
-package inc.devlan.wcf.activity;
+package com.devlan.wcf.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 

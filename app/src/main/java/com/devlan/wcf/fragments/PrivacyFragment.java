@@ -1,4 +1,4 @@
-package inc.devlan.wcf.fragments;
+package com.devlan.wcf.fragments;
 
 
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import inc.devlan.wcf.activity.MainActivity;
+import com.devlan.wcf.activity.MainActivity;
 import com.devlan.wcf.R;
 
 import java.io.IOException;

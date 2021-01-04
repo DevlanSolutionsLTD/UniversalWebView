@@ -1,4 +1,4 @@
-package inc.devlan.wcf.activity;
+package com.devlan.wcf.activity;
 
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
@@ -27,12 +27,12 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import inc.devlan.wcf.BuildConfig;
-import inc.devlan.wcf.MyApplication;
+import com.devlan.wcf.BuildConfig;
+import com.devlan.wcf.MyApplication;
 import com.devlan.wcf.R;
-import inc.devlan.wcf.fragments.AboutFragment;
-import inc.devlan.wcf.fragments.PrivacyFragment;
-import inc.devlan.wcf.fragments.WebviewFragment;
+import com.devlan.wcf.fragments.AboutFragment;
+import com.devlan.wcf.fragments.PrivacyFragment;
+import com.devlan.wcf.fragments.WebviewFragment;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;

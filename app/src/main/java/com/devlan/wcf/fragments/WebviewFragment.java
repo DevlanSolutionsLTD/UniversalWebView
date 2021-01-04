@@ -1,4 +1,4 @@
-package inc.devlan.wcf.fragments;
+package com.devlan.wcf.fragments;
 
 
 import android.annotation.SuppressLint;
@@ -28,7 +28,7 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
-import inc.devlan.wcf.activity.MainActivity;
+import com.devlan.wcf.activity.MainActivity;
 import com.devlan.wcf.R;
 
 public class WebviewFragment extends Fragment {

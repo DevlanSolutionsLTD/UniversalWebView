@@ -1,4 +1,4 @@
-package inc.devlan.wcf.fragments;
+package com.devlan.wcf.fragments;
 
 
 import android.content.Intent;
@@ -13,7 +13,7 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.devlan.wcf.R;
-import inc.devlan.wcf.activity.MainActivity;
+import com.devlan.wcf.activity.MainActivity;
 
 public class AboutFragment extends Fragment {
     public View view;
