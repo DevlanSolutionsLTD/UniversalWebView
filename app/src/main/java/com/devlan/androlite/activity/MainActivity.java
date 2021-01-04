@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragment = WebviewFragment.newInstance(getResources().getString(R.string.main_url));
             displaySelectedFragment(fragment);
         }
+        /*
         else if (id == R.id.youtube){
             fragment = WebviewFragment.newInstance(getResources().getString(R.string.youtube_link));
             displaySelectedFragment(fragment);
@@ -127,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         else if (id == R.id.instagram){
             fragment = WebviewFragment.newInstance(getResources().getString(R.string.instagram_link));
             displaySelectedFragment(fragment);
-        }
+        } */
         else if (id == R.id.shareapp) {
             if (mPublisherInterstitialAd.isLoaded()) {
                 mPublisherInterstitialAd.show();

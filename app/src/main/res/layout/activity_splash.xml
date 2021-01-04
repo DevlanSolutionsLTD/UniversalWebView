@@ -13,21 +13,19 @@
     <ImageView
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:src="@drawable/splash_icon"
         android:layout_gravity="center"
-        android:padding="50dp"
         android:layout_marginTop="100dp"
-        />
+        android:padding="50dp"
+        android:src="@drawable/splash" />
 
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:theme="@style/ProgressBarStyle"
-        android:max="100"
-        android:indeterminate="true"
-        android:progress="0"
         android:layout_marginTop="10dp"
-        />
+        android:indeterminate="true"
+        android:max="100"
+        android:progress="0"
+        android:theme="@style/ProgressBarStyle" />
 
 </LinearLayout>
