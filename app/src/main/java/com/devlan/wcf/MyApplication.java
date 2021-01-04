@@ -1,4 +1,4 @@
-package com.andromob.androlite;
+package com.devlan.wcf;
 
 import android.app.Application;
 

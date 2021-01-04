@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">AndroLite</string>
+    <string name="app_name">WCF</string>
     <string name="image">image</string>
     <string name="navigation_drawer_open" />
     <string name="navigation_drawer_close" />
 
-    <string name="main_url">https://www.indiatoday.in</string>
+    <string name="main_url">https://www.wcf.co.ke</string>
 
     <string name="instagram_link">https://www.instagram.com</string>
     <string name="youtube_link">https://www.youtube.com</string>
@@ -17,11 +17,11 @@
     <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
 
     <string name="about_us_developer">Developer</string>
-    <string name="about_us_developer_name">AndroMOB</string>
+    <string name="about_us_developer_name">DevLan Inc</string>
     <string name="about_us_email">Email</string>
-    <string name="about_us_email_text">andromobindia@gmail.com</string>
+    <string name="about_us_email_text">devlan</string>
     <string name="about_us_contact">Contact</string>
-    <string name="about_us_contact_text">"+91 97258 68313</string>
+    <string name="about_us_contact_text">"+254740847563</string>
     <string name="about_us_about">About Us</string>
     <string name="about">About</string>
     <string name="about_description">This is a Universal Lite Webview App, with this app you can easily convert your website to android app

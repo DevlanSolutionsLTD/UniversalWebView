@@ -1,4 +1,4 @@
-package com.andromob.androlite.fragments;
+package com.devlan.wcf.fragments;
 
 
 import android.os.Bundle;
@@ -13,8 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.andromob.androlite.activity.MainActivity;
-import com.andromob.androlite.R;
+import com.devlan.wcf.activity.MainActivity;
+import com.devlan.wcf.R;
 
 import java.io.IOException;
 import java.io.InputStream;

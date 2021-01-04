@@ -1,4 +1,4 @@
-package com.andromob.androlite.activity;
+package com.devlan.wcf.activity;
 
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
@@ -27,12 +27,12 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.andromob.androlite.BuildConfig;
-import com.andromob.androlite.MyApplication;
-import com.andromob.androlite.R;
-import com.andromob.androlite.fragments.AboutFragment;
-import com.andromob.androlite.fragments.PrivacyFragment;
-import com.andromob.androlite.fragments.WebviewFragment;
+import com.devlan.wcf.BuildConfig;
+import com.devlan.wcf.MyApplication;
+import com.devlan.wcf.R;
+import com.devlan.wcf.fragments.AboutFragment;
+import com.devlan.wcf.fragments.PrivacyFragment;
+import com.devlan.wcf.fragments.WebviewFragment;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
@@ -42,7 +42,7 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
 
-import static com.andromob.androlite.fragments.WebviewFragment.mwebView;
+import static com.devlan.wcf.fragments.WebviewFragment.mwebView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private com.google.android.gms.ads.AdView AdView;

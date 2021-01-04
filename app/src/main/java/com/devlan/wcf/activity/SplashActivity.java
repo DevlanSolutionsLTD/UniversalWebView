@@ -1,4 +1,4 @@
-package com.andromob.androlite.activity;
+package com.devlan.wcf.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.andromob.androlite.R;
+import com.devlan.wcf.R;
 
 public class SplashActivity extends AppCompatActivity {
 

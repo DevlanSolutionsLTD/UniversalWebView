@@ -1,4 +1,4 @@
-package com.andromob.androlite.fragments;
+package com.devlan.wcf.fragments;
 
 
 import android.annotation.SuppressLint;
@@ -28,8 +28,8 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
-import com.andromob.androlite.activity.MainActivity;
-import com.andromob.androlite.R;
+import com.devlan.wcf.activity.MainActivity;
+import com.devlan.wcf.R;
 
 public class WebviewFragment extends Fragment {
     public View view;
