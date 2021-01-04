@@ -1,4 +1,4 @@
-package com.devlan.wcf.activity;
+package inc.devlan.wcf.activity;
 
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
@@ -27,12 +27,12 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.devlan.wcf.BuildConfig;
-import com.devlan.wcf.MyApplication;
+import inc.devlan.wcf.BuildConfig;
+import inc.devlan.wcf.MyApplication;
 import com.devlan.wcf.R;
-import com.devlan.wcf.fragments.AboutFragment;
-import com.devlan.wcf.fragments.PrivacyFragment;
-import com.devlan.wcf.fragments.WebviewFragment;
+import inc.devlan.wcf.fragments.AboutFragment;
+import inc.devlan.wcf.fragments.PrivacyFragment;
+import inc.devlan.wcf.fragments.WebviewFragment;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
@@ -41,8 +41,6 @@ import com.google.android.gms.ads.doubleclick.PublisherInterstitialAd;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
-
-import static com.devlan.wcf.fragments.WebviewFragment.mwebView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private com.google.android.gms.ads.AdView AdView;
@@ -269,7 +267,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.refresh) {
             checkConnection();
-            mwebView.reload();
+            WebviewFragment.mwebView.reload();
         }
         return super.onOptionsItemSelected(item);
     }

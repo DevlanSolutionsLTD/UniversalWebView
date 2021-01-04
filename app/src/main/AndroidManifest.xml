@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.devlan.wcf.MyApplication"
+        android:name="com.devlan.wcf.inc.devlan.wcf.MyApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.devlan.wcf.activity.SplashActivity"
+        <activity android:name="com.devlan.wcf.inc.devlan.wcf.activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.devlan.wcf.activity.MainActivity"
+            android:name="com.devlan.wcf.inc.devlan.wcf.activity.MainActivity"
             android:configChanges="screenSize|orientation"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>

@@ -1,4 +1,4 @@
-package com.storyapp.twitchtv;
+package inc.storyapp.twitchtv;
 
 import org.junit.Test;
 
