@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:padding="50dp"
-        android:src="@drawable/splash" />
+        android:src="@drawable/wcfsplash" />
 
     <ProgressBar
         android:layout_width="match_parent"

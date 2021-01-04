@@ -4,7 +4,7 @@
     <string name="navigation_drawer_open" />
     <string name="navigation_drawer_close" />
 
-    <string name="main_url">https://www.wcf.co.ke</string>
+    <string name="main_url">http://172.16.4.109/WCF</string>
 
     <string name="instagram_link"></string>
     <string name="youtube_link"></string>
