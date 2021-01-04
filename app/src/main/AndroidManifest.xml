@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.devlan.androlite">
+    package="com.andromob.androlite">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.devlan.androlite.MyApplication"
+        android:name="com.andromob.androlite.MyApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.devlan.androlite.activity.SplashActivity"
+        <activity android:name="com.andromob.androlite.activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.devlan.androlite.activity.MainActivity"
+            android:name="com.andromob.androlite.activity.MainActivity"
             android:configChanges="screenSize|orientation"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>

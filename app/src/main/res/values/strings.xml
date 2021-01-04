@@ -1,33 +1,34 @@
 <resources>
-    <string name="app_name">WCF</string>
+    <string name="app_name">AndroLite</string>
     <string name="image">image</string>
     <string name="navigation_drawer_open" />
     <string name="navigation_drawer_close" />
 
-    <string name="main_url">http://172.16.4.109/WCF</string>
+    <string name="main_url">https://www.indiatoday.in</string>
 
-    <string name="instagram_link"></string>
-    <string name="youtube_link"></string>
-    <string name="facebook_link"></string>
-    <string name="facebook_page_id"></string>
+    <string name="instagram_link">https://www.instagram.com</string>
+    <string name="youtube_link">https://www.youtube.com</string>
+    <string name="facebook_link">https://www.facebook.com/andromobindia</string>
+    <string name="facebook_page_id">114143416671762</string>
 
-    <string name="ad_publisher_id"></string>
-    <string name="admob_app_id"></string>
-    <string name="admob_banner_id"></string>
-    <string name="admob_interstitial_id"></string>
+    <string name="ad_publisher_id">pub-3940256099942544</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
 
     <string name="about_us_developer">Developer</string>
-    <string name="about_us_developer_name">DevLan Inc </string>
+    <string name="about_us_developer_name">AndroMOB</string>
     <string name="about_us_email">Email</string>
-    <string name="about_us_email_text">devlaninc18@gmail.com</string>
+    <string name="about_us_email_text">andromobindia@gmail.com</string>
     <string name="about_us_contact">Contact</string>
-    <string name="about_us_contact_text">"+254737229776</string>
+    <string name="about_us_contact_text">"+91 97258 68313</string>
     <string name="about_us_about">About Us</string>
     <string name="about">About</string>
-    <string name="about_description">World Christian Fellowship is a christian social media platform
-        that unites all christians all over the world.</string>
+    <string name="about_description">This is a Universal Lite Webview App, with this app you can easily convert your website to android app
+    User friendly UI and simple codes makes it easier for the developers to re-create from this code.
+    </string>
 
-    <string name="sure_quit">Are You Sure You Want To Quit?</string>
+    <string name="sure_quit">Are you sure you want to quit?</string>
     <string name="exit">Exit</string>
     <string name="cancel">Cancel</string>
 </resources>

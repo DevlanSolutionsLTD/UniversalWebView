@@ -7,25 +7,27 @@
     android:orientation="vertical"
     android:background="#ffffff"
     android:id="@+id/splash"
-    tools:context="com.devlan.androlite.activity.SplashActivity">
+    tools:context="com.andromob.androlite.activity.SplashActivity">
 
 
     <ImageView
         android:layout_width="350dp"
         android:layout_height="350dp"
+        android:src="@drawable/splash_icon"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
         android:padding="50dp"
-        android:src="@drawable/wcfsplash" />
+        android:layout_marginTop="100dp"
+        />
 
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:indeterminate="true"
+        android:theme="@style/ProgressBarStyle"
         android:max="100"
+        android:indeterminate="true"
         android:progress="0"
-        android:theme="@style/ProgressBarStyle" />
+        android:layout_marginTop="10dp"
+        />
 
 </LinearLayout>
