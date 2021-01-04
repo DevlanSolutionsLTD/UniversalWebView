@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:511352387188:android:efb7e06f412c748bbcc321",
         "android_client_info": {
-          "package_name": "com.devlan.wcf"
+          "package_name": "inc.devlan.wcf"
         }
       },
       "oauth_client": [

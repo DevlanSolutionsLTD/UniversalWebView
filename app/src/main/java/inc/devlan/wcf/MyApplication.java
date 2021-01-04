@@ -1,4 +1,4 @@
-package com.devlan.wcf;
+package inc.devlan.wcf;
 
 import android.app.Application;
 
