@@ -27,12 +27,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import inc.devlan.wcf.BuildConfig;
-import inc.devlan.wcf.MyApplication;
+import com.devlan.wcf.BuildConfig;
 import com.devlan.wcf.R;
-import inc.devlan.wcf.fragments.AboutFragment;
-import inc.devlan.wcf.fragments.PrivacyFragment;
-import inc.devlan.wcf.fragments.WebviewFragment;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
@@ -41,6 +37,11 @@ import com.google.android.gms.ads.doubleclick.PublisherInterstitialAd;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
+
+import inc.devlan.wcf.MyApplication;
+import inc.devlan.wcf.fragments.AboutFragment;
+import inc.devlan.wcf.fragments.PrivacyFragment;
+import inc.devlan.wcf.fragments.WebviewFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private com.google.android.gms.ads.AdView AdView;
