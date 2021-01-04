@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">WCF</string>
+    <string name="image">image</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+
+    <string name="main_url">https://www.wcf.co.ke</string>
+
+    <string name="instagram_link"></string>
+    <string name="youtube_link"></string>
+    <string name="facebook_link"></string>
+    <string name="facebook_page_id"></string>
+
+    <string name="ad_publisher_id"></string>
+    <string name="admob_app_id"></string>
+    <string name="admob_banner_id"></string>
+    <string name="admob_interstitial_id"></string>
+
+    <string name="about_us_developer">Developer</string>
+    <string name="about_us_developer_name">DevLan Inc </string>
+    <string name="about_us_email">Email</string>
+    <string name="about_us_email_text">devlaninc18@gmail.com</string>
+    <string name="about_us_contact">Contact</string>
+    <string name="about_us_contact_text">"+254737229776</string>
+    <string name="about_us_about">About Us</string>
+    <string name="about">About</string>
+    <string name="about_description">World Christian Fellowship is a christian social media platform
+        that unites all christians all over the world.</string>
+
+    <string name="sure_quit">Are You Sure You Want To Quit?</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+</resources>

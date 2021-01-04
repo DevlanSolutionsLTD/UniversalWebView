@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <WebView
+        android:background="@color/black"
+        android:id="@+id/webView_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:background="@drawable/loading_bg"
+        android:layout_width="wrap_content"
+        android:theme="@style/Loading"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressfb">
+    </ProgressBar>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/noConnectionLogo"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/no_internet" />
+
+        <TextView
+            android:id="@+id/txtNoConnection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noConnectionLogo"
+            android:gravity="center"
+            android:text="No Internet Connection"
+            android:textAlignment="center"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/txtNoConnection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:longClickable="true"
+            android:text="Retry"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

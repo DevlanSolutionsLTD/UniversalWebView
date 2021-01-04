@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "768959450457",
+    "firebase_url": "https://worldchristianfellowship-e241d.firebaseio.com",
+    "project_id": "worldchristianfellowship-e241d",
+    "storage_bucket": "worldchristianfellowship-e241d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768959450457:android:a0b8753289453afccfd048",
+        "android_client_info": {
+          "package_name": "com.devlan.androlite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768959450457-iuehhvb62vbl13amg1jkl3sandgdf9qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM0Ro1IgN7xYRktOtk-En7vWG5uk_Y2C0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768959450457-iuehhvb62vbl13amg1jkl3sandgdf9qr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

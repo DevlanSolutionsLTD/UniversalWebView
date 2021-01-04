@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.devlan.androlite.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:id="@+id/no_internet">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/no_internet"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/noConnectionLogo"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Internet Connection"
+            android:layout_below="@+id/noConnectionLogo"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:id="@+id/txtNoConnection"/>
+
+        <Button
+            android:id="@+id/Retrybtn"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/txtNoConnection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@color/colorPrimary"
+            android:text="Retry"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:longClickable="true"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
