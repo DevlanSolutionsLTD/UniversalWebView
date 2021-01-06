@@ -1,4 +1,4 @@
-package com.andromob.webview;
+package com.devlan.universalwebview;
 
 import org.junit.Test;
 

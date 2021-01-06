@@ -1,4 +1,4 @@
-package com.andromob.webview;
+package com.devlan.universalwebview;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -64,6 +64,7 @@ import com.google.android.gms.ads.doubleclick.PublisherInterstitialAd;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.BuildConfig;
 
 import java.io.File;
 import java.io.IOException;
@@ -129,7 +130,7 @@ public class MainActivity extends AppCompatActivity
 
         myApplication = MyApplication.getInstance();
 
-//admob codes
+        //admob codes
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
@@ -153,7 +154,7 @@ public class MainActivity extends AppCompatActivity
             public void onAdLoaded() {
                 mPublisherInterstitialAd.loadAd(new PublisherAdRequest.Builder().build()); } });
         mPublisherInterstitialAd.show();
-//end admob codes
+        //end admob codes
 
 
 
