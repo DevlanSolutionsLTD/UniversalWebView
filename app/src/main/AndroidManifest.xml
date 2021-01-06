@@ -22,7 +22,7 @@
         <activity android:name=".Privacy_Policy" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".SplashActivity"
-            android:theme="@style/AppTheme.NoActionBar2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
