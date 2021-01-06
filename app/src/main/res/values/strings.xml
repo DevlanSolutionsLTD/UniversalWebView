@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">UniversalWebView By DevLan</string>
-    <string name="webiview_url">https://wcf.co.ke/</string>
+    <string name="app_name">Webview By AndroMOB</string>
+    <string name="webiview_url">https://www.bbc.com/</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="admob_app_id"></string>
-    <string name="admob_banner_id"></string>
-    <string name="admob_interstitial_id"></string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
 
 
     <string name="action_settings">Settings</string>
@@ -19,11 +19,11 @@
 
     <!--<about us strings>-->
     <string name="about_us_developer">Developer</string>
-    <string name="about_us_developer_name">DevLan Technologies</string>
+    <string name="about_us_developer_name">AndroMOB</string>
     <string name="about_us_email">Email</string>
-    <string name="about_us_email_text">devlan@protonmail.com</string>
+    <string name="about_us_email_text">andromobindia@gmail.com</string>
     <string name="about_us_contact">Contact</string>
-    <string name="about_us_contact_text">"+254737229776</string>
+    <string name="about_us_contact_text">"+91 9725868313</string>
     <string name="about_us_about">About Us</string>
     <string name="about">About</string>
     <string name="about_description">All-In-One web-view app, we’ve tried to cover all necessary intents and links so that buyer can use this for their custom reference and build something more exciting than our app.User friendly UI and simple codes makes it easier for the developers to re-create from this code.</string>

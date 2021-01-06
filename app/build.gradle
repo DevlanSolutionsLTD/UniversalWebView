@@ -6,7 +6,7 @@ android {
     buildToolsVersion "29.0.2"
 
     defaultConfig {
-        applicationId "com.devlan.universalwebview"
+        applicationId "com.andromob.webview"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 4
@@ -22,7 +22,7 @@ android {
     android {
         defaultConfig {
             manifestPlaceholders = [
-                    onesignal_app_id: '71f26876-c1aa-43f5-9604-06181b61c13e',//replace your onsignal app_id  Here
+                    onesignal_app_id: '3140e9c9-70c8-4502-8c23-7cd22380d5bc',//replace your onsignal app_id  Here
                     // Project number pulled from dashboard, local value is ignored.
                     onesignal_google_project_number: 'REMOTE'
             ]
