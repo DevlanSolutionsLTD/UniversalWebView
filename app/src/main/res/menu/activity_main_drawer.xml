@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Main"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="Main Menu" />
+
+        <item
+            android:id="@+id/sub_item1"
+            android:icon="@drawable/ic_sub_items"
+            android:title="Sub Item 1"
+            android:visible="false" />
+        <item
+            android:id="@+id/sub_item2"
+            android:title="Sub Item 2"
+            android:icon="@drawable/ic_sub_items"
+            android:visible="false" />
+        <item
+            android:id="@+id/sub_item3"
+            android:title="Sub Item 3"
+            android:icon="@drawable/ic_sub_items"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_youtube"
+            android:icon="@drawable/ic_hot"
+            android:title="Youtube" />
+
+        <item
+            android:id="@+id/world"
+            android:icon="@drawable/ic_new_releases"
+            android:title="World News" />
+
+        <item
+          android:id="@+id/gujaratinews"
+            android:icon="@drawable/ic_forward"
+            android:title="Gujarati News" />
+
+        <item
+            android:id="@+id/entertainment"
+            android:icon="@drawable/ic_feed"
+            android:title="Entertainment" />
+
+        <item
+            android:id="@+id/facebook"
+            android:icon="@drawable/ic_facebook"
+            android:title="Facebook" />
+
+        <item
+            android:id="@+id/instagram"
+            android:icon="@drawable/ic_instagram"
+            android:title="Instagram" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="Feedback" />
+
+            <item
+                android:id="@+id/shareapp"
+                android:icon="@drawable/ic_share"
+                android:title="Share App" />
+
+            <item
+                android:id="@+id/rateapp"
+                android:icon="@drawable/ic_rate"
+                android:title="Rate App" />
+
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_account"
+                android:title="About Us" />
+
+            <item
+                android:id="@+id/privacy"
+                android:icon="@drawable/ic_privacy"
+                android:title="Privacy Policy" />
+
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/ic_exit"
+                android:title="Exit" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

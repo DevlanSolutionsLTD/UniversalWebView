@@ -7,14 +7,15 @@
     android:orientation="vertical"
     android:background="#ffffff"
     android:id="@+id/splash"
-    tools:context="com.devlan.wcf.inc.devlan.wcf.activity.SplashActivity">
+    tools:context=".SplashActivity">
 
 
     <ImageView
-        android:layout_width="350dp"
-        android:layout_height="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:src="@drawable/splash_icon"
-        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_gravity=""
         android:padding="50dp"
         android:layout_marginTop="100dp"
         />

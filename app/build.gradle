@@ -4,25 +4,25 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
+
     defaultConfig {
-        applicationId "inc.devlan.wcf"
-        minSdkVersion 17
+        applicationId "com.andromob.webview"
+        minSdkVersion 16
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        versionCode 4
+        versionName "1.3"
     }
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
     android {
         defaultConfig {
             manifestPlaceholders = [
-                    onesignal_app_id : 'a92c15c0-1702-4c4a-b6be-e78b5f9c703c',//replace your onsignal app_id  Here
+                    onesignal_app_id: '3140e9c9-70c8-4502-8c23-7cd22380d5bc',//replace your onsignal app_id  Here
                     // Project number pulled from dashboard, local value is ignored.
                     onesignal_google_project_number: 'REMOTE'
             ]
@@ -30,18 +30,17 @@ android {
     }
 }
 
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'com.google.android.material:material:1.0.0'
-    implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'com.google.android.gms:play-services-ads:18.3.0'
-    implementation 'com.google.firebase:firebase-analytics:17.2.1'
-    implementation 'com.onesignal:OneSignal:3.12.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads:19.0.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
+    implementation 'com.onesignal:OneSignal:3.12.6'
 }
 apply plugin: 'com.google.gms.google-services'
