@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_light_background"
     tools:context=".SplashActivity">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="457dp"
         android:layout_height="673dp"
-        android:contentDescription="@string/todo"
         android:src="@drawable/splash_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
