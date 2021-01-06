@@ -10,27 +10,27 @@ import  android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class MainActivity extends AppCompatActivity {
-    private WebView Doctor_Login;
+    private WebView WCFWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Doctor_Login = (WebView)findViewById(R.id.DocLogIn);
-        WebSettings webSettings = Doctor_Login.getSettings();
+        WCFWebView = (WebView)findViewById(R.id.DocLogIn);
+        WebSettings webSettings = WCFWebView.getSettings();
 
         webSettings.setJavaScriptEnabled(true);
-        Doctor_Login.setWebViewClient(new WebViewClient());
+        WCFWebView.setWebViewClient(new WebViewClient());
 
         //Load URL To Doctors Login Here
-        Doctor_Login.loadUrl("");
+        WCFWebView.loadUrl("https://www.wcf.co.ke");
     }
 
     @Override
     public void onBackPressed() {
-        if(Doctor_Login.canGoBack()) {
-            Doctor_Login.goBack();
+        if(WCFWebView.canGoBack()) {
+            WCFWebView.goBack();
         } else {
             super.onBackPressed();
         }
