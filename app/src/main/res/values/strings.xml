@@ -1,9 +1,4 @@
 <resources>
-    <string name="app_name">SHC</string>
-    <string name="powered_by_martdevelopers_inc">Powered By MartDevelopers Inc</string>
-    <string name="instructions">Tap Log In As Medical Expert Or Log In As Client</string>
-    <string name="doc_login">Log In As Doctor</string>
-    <string name="client_login">Log In As Client</string>
-
-    <string name="todo">TODO</string>
+    <string name="app_name">WCF</string>
+    <string name="powered_by_martdevelopers_inc">Powered By Devlan Inc</string>
 </resources>

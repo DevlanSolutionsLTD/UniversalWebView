@@ -11,7 +11,7 @@
         android:layout_width="457dp"
         android:layout_height="673dp"
         android:contentDescription="@string/todo"
-        android:src="@drawable/smart"
+        android:src="@drawable/splash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintLeft_toLeftOf="parent"
