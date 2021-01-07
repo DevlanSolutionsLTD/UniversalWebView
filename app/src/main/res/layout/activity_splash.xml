@@ -10,7 +10,7 @@
         android:id="@+id/logo"
         android:layout_width="457dp"
         android:layout_height="673dp"
-        android:src="@drawable/splash_logo"
+        android:src="@drawable/splashscreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
