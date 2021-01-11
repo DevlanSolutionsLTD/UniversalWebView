@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="20dp"
+    android:padding="50dp"
     android:background="@drawable/bg_round">
 
 
@@ -16,7 +16,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:foregroundGravity="center"
-        app:srcCompat="@drawable/no_internet" />
+        app:srcCompat="@drawable/no_internet"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/no_connection"
@@ -24,11 +25,12 @@
         android:layout_height="81dp"
         android:fontFamily="@font/heartwarming"
         android:gravity="center"
-        android:text="No Internet Connection Found.\n Please Check Your Connection "
+        android:text="@string/no_internet_connection_found_n_please_check_your_connection"
         android:textColor="@color/colorPrimary"
-        android:textSize="20dp"
+        android:textSize="15sp"
         android:textStyle="bold"
         />
+
 
     <Button
         android:id="@+id/bt_try_again"
@@ -36,9 +38,10 @@
         android:layout_height="65dp"
         android:fontFamily="@font/sportsjersey"
         android:gravity="center"
-        android:text="Try Again"
+        android:text="@string/try_again"
         android:textAllCaps="false"
-        android:textSize="20dp"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
         android:textStyle="bold"
          />
 
