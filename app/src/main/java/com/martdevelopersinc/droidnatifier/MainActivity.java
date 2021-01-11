@@ -25,7 +25,6 @@ import java.io.File;
 import java.io.IOException;
 import android.webkit.WebChromeClient;
 
-//import class for Uploading part End
 
 public class MainActivity extends AppCompatActivity {
     private WebView web;
