@@ -5,10 +5,13 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.webkit.WebSettings;
 import  android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -24,6 +27,7 @@ import android.os.Parcelable;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.webkit.ValueCallback;
+import android.widget.Button;
 import android.widget.Toast;
 import java.io.File;
 import java.io.IOException;
@@ -72,8 +76,44 @@ public class MainActivity extends AppCompatActivity {
             //When Connection Is Inactive
             //Load Dialog
             Dialog dialog = new Dialog(this);
-            //Set Content viw
+            //Set Content view
+            dialog.setContentView(R.layout.alert_dialog);
+            //Set Outside Touch
+            dialog.setCanceledOnTouchOutside(false);
+            //set dialog width and height
+            dialog.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
+                    WindowManager.LayoutParams.WRAP_CONTENT);
+
+            //Set Transparent Background
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+            //Set Animation
+            dialog.getWindow().getAttributes().windowAnimations =
+                    android.R.style.Animation_Dialog;
+
+            //Initialize Dialog Variable
+            Button btTryAgain = dialog.findViewById(R.id.bt_try_again);
+
+            //Load On Click Listener
+            btTryAgain.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View view) {
+                    //Call recreate methods
+                    recreate();
+                }
+            });
+
+            //Show Dialog
+            dialog.show();
+
         }
+        else {
+            //When Internet Connectivity Is Active
+
+            //Load Url In WebView also replace with your own url
+            web.loadUrl("https://wcf.co.ke/");
+        }
+
 
 
         //Improve Web View Performance

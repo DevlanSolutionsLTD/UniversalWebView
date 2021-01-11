@@ -13,31 +13,66 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:foregroundGravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:foregroundGravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385"
+        app:layout_constraintVertical_bias="0.341"
         app:srcCompat="@drawable/no_internet" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/woops"
         android:layout_width="286dp"
         android:layout_height="81dp"
+        android:fontFamily="@font/athena"
+        android:gravity="center"
         android:text="Oops !"
         android:textColor="@color/colorPrimary"
-        android:gravity="center"
         android:textSize="35dp"
-        android:fontFamily="@font/athena"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
+        app:layout_constraintVertical_bias="0.514" />
+
+    <TextView
+        android:id="@+id/no_connection"
+        android:layout_width="286dp"
+        android:layout_height="81dp"
+        android:fontFamily="@font/heartwarming"
+        android:gravity="center"
+        android:text="No Internet Connection Found.\n Please Check Your Connection "
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <Button
+        android:id="@+id/bt_try_again"
+        android:layout_width="133dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/sportsjersey"
+        android:text="Try Again"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintVertical_bias="0.766" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
