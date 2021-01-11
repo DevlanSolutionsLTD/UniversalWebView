@@ -115,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-
         //Improve Web View Performance
         web.getSettings().setLoadsImagesAutomatically(true);
         web.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
