@@ -1,15 +1,19 @@
 package com.martdevelopersinc.droidnatifier;
-
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
-//import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
 import  android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-//import class for Uploading part start
+//Import File Upload In Android
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -28,6 +32,7 @@ import android.webkit.WebChromeClient;
 
 public class MainActivity extends AppCompatActivity {
     private WebView web;
+    //Replace This URL With Your Web Based Application URL
     String webUrl = "https://wcf.co.ke/";
 
     public Context context;
@@ -42,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private ValueCallback<Uri[]> mFilePathCallback;
     private String mCameraPhotoPath;
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,10 +58,25 @@ public class MainActivity extends AppCompatActivity {
 
         WebSettings mywebsettings = web.getSettings();
         mywebsettings.setJavaScriptEnabled(true);
-
         web.setWebViewClient(new WebViewClient());
 
-        //improve webview performance
+        //Initialize connectivity
+         ConnectivityManager connectivityManager = (ConnectivityManager)
+                 getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+         //Get Active Network Information
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+
+        //Check Network Status
+        if(networkInfo == null || !networkInfo.isConnected() || !networkInfo.isAvailable()) {
+            //When Connection Is Inactive
+            //Load Dialog
+            Dialog dialog = new Dialog(this);
+            //Set Content viw
+        }
+
+
+        //Improve Web View Performance
         web.getSettings().setLoadsImagesAutomatically(true);
         web.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
         web.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
@@ -68,10 +89,9 @@ public class MainActivity extends AppCompatActivity {
         mywebsettings.setSaveFormData(true);
         mywebsettings.setEnableSmoothTransition(true);
 
-        //enable upload part
-
+        //Enable File Upload
         web.setWebChromeClient(new WebChromeClient() {
-            // for Lollipop, all in one
+            // Lollipop, All In One
             public boolean onShowFileChooser(
                     WebView webView, ValueCallback<Uri[]> filePathCallback,
                     WebChromeClient.FileChooserParams fileChooserParams) {
@@ -83,14 +103,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
 
-                    // create the file where the photo should go
+                    // Create A Custom Path Where The File Will Be Saved
                     File photoFile = null;
                     try {
                         photoFile = createImageFile();
                         takePictureIntent.putExtra("PhotoPath", mCameraPhotoPath);
                     } catch (IOException ex) {
                         // Error occurred while creating the File
-                        Log.e(TAG, "Unable to create Image File", ex);
+                        Log.e(TAG, "Unable To Create Image File", ex);
                     }
 
                     // continue only if the file was successfully created
@@ -105,8 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
-                contentSelectionIntent.setType("*/*");
-                contentSelectionIntent.setType("*/*");
+                contentSelectionIntent.setType("*/*"); // MIME Type To Select Any File
 
 
                 Intent[] intentArray;
@@ -254,6 +273,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 
     @Override
     public void onBackPressed() {
