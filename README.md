@@ -5,9 +5,9 @@ Convert any website, blog, web based system to an android app real quick with Un
 ## To Dos
 ```
 1. Pull To Refresh
-2. Firebase Intergration
-3. OnSignal Intergration
-4. Preloaders
+2. OnSignal Intergration
+3. Preloaders
+4. Improve UI
 
 ```
 
