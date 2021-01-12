@@ -9,9 +9,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="400dp"
-        android:layout_height="673dp"
-        android:contentDescription="TODO"
+        android:layout_width="380dp"
+        android:layout_height="600dp"
         android:src="@drawable/splashscreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
@@ -25,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:fontFamily="@font/longshort"
+        android:fontFamily="@font/sportsjersey"
         android:text="@string/a_devlan_inc_production"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="50dp"
+    android:padding="80dp"
     android:background="@drawable/bg_round">
 
 
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:foregroundGravity="center"
         app:srcCompat="@drawable/no_internet"
-        android:contentDescription="@string/todo" />
+        />
 
     <TextView
         android:id="@+id/no_connection"
